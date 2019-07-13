@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Edit User Form</title>
+  <link rel="stylesheet" href="edit-user.css" />
+</head>
+  <body>
+  	<header>
+        <h1>edit user</h1>
+  	</header>
+  	<section>
+  		<article>
+  			<form id="right" metod="post">
+	          <label>
+	            <span>Username</span>
+	            <input type="text"/>
+	          </label>
+	          <label>
+	            <span>Email</span>
+	            <input type="email"/>
+	          </label>
+	          <label>
+	            <span>Phone number</span>
+	            <input type="number" />
+	          </label>
+	          <span>User type</span>
+	          <div id="u-type">
+		          <label class="Broadband">
+		            <input type="radio" value="Broadband" />
+		            <span>Broadband</span>
+		          </label>
+		          <label class="Radio">
+		            <input type="radio" value="Radio" />
+		            <span>Radio</span>
+		          </label>
+		      </div>
+	          <label>
+	            <span>Change Password</span>
+	            <input type="text"/>
+	          </label>
+	          <span>Groups</span>
+	          <fieldset id="groups">
+	          	<label>
+	          		<div>
+			            <input type="checkbox" value="All groups" />
+			            <span>All groups</span>
+			        </div>
+		            <div>
+			            <input type="checkbox" value="Group 1" />
+			            <span>Group 1</span>
+			        </div>
+		            <div>
+			            <input type="checkbox" value="Group 2" />
+			            <span>Group 2</span>
+			        </div>
+		            <div>
+			            <input type="checkbox" value="Group 3" />
+			            <span>Group 3</span>
+			        </div>
+		            <div>
+			            <input type="checkbox" value="Group 4" />
+			            <span>Group 4</span>
+			        </div>
+	          	</label>
+	          </fieldset>
+	          <div id="contacts">
+	          	<span>Contacts</span>
+	          	<a href="#">See Contacts list </a>
+	          </div>
+	          <button type="reset">CANCEL</button>
+	          <button type="submit">SAVE</button>
+	        </form>
+  		</article>
+  	</section>
+  </body>
+</html>

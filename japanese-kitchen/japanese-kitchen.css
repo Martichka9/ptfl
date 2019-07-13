@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("images/dark-wood.JPG");
+}
+
+header, nav, main {
+	width: 70%;
+	margin: auto;
+}
+
+header, nav {
+	height: 150px;
+	background-image: url("images/header-page.JPG");
+	background-size: cover;
+	background-position: center;
+}
+
+h1 {
+	height: 100%;
+	text-align: right;
+	padding: 40px 60px;
+	font-size: 65px;
+}
+
+nav {
+	font-family: Lato, sans-serif;
+	background-position: top;
+    height: 36px;
+    margin-top: 2px
+}
+
+nav ul {
+	float: left;
+	margin-top: 10px;
+    width: 100%;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav ul li a {
+	color: white;
+	padding: 10px 10px 10px 10px;
+	font-weight: bold;
+}
+nav ul li:first-of-type a {
+	color: black;
+}
+
+main{
+	background-color: white;
+	margin-top: 4px;
+}
+
+main > .courses {
+    width: 70%;
+    height: 650px;
+    border-right: 2px solid #f4f4f4;
+    padding: 20px 0 20px 20px;
+}
+
+.courses, aside{
+	display: inline-grid;
+}
+
+main > aside {
+	width: 24%;
+}
+
+article {
+	width: 100%;
+
+}
+
+figure {
+	width: 370px;
+    border: 1px solid #f4f4f4;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+}
+
+figure > img {
+	width: 100%;
+}
+figcaption {
+	margin-top: 5px;
+}
+
+div> h2, div > h3, article > p {
+	text-align: left;
+    margin: 20px 0 0 420px;
+}
+
+div > h2 {
+	margin-top: 5%;
+	color: #646464;
+	font-size: 35px;
+}
+div > h3 {
+	color: #e2c483;
+	font-size: 25px;
+	margin-top: 5px; 
+}
+article > p {
+	font-size: 20px;
+}
+
+.popular-recipes > h2 {
+	color: #dc6883;
+	width: 50%;
+	margin-left: 20px;
+}
+
+.popular-recipes > ul {
+	margin: 40px 20px;
+}
+
+.popular-recipes > ul > li {
+	list-style-type: none;
+	padding: 10px 0;
+	border-bottom: 2px solid #f4f4f4;
+}
+
+.popular-recipes > ul > li > a {
+	color: #dc6883;
+	font-size: 25px;
+
+}
+
+footer {
+	background-color: #b1b0ad;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+}

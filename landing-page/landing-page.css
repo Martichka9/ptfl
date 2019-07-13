@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+section, header, #wtcu > article > h3 {
+    text-align: center;
+}
+
+section {
+    padding: 50px 60px;
+}
+
+#wtcu, footer {
+    color: white;
+}
+/*  HEADER STYLE  */
+header {
+    background-image: url(images/Layer-759_02.jpg);
+    background-position: top left;
+    background-size: 2300px;
+    height: 735px;
+    padding-top: 20px;
+    color: white;
+}
+
+#main-menu {
+    background-color: #caa16d;
+    width: 60%;
+    height: 80px;
+    margin: auto;
+    opacity: 0.9;
+}
+#main-menu ul li {
+    display: inline-block;
+}
+
+#main-menu ul li a {
+    height: 80px;
+    width: 95px;
+    display: block;
+    padding-top: 30px;
+}
+
+h1, header> p {
+    text-shadow: 2px 2px 2px black;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 135px;
+    font-size: 3.7rem;
+}
+
+header > p {
+    font-size: 1.7rem;
+    width: 24%;
+    margin: 50px auto;
+}
+
+header > a {
+    background-color: #080820;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(8,8,32,0.84);
+}
+
+/*  MAIN STYLE  */
+/*  FIRST SECTION  */
+.points {
+    display: inline-table;
+    width: 25%;
+    height: 100px;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.industry-icon {
+    display: inline-block;
+    float: left;
+    width: 55px;
+    height: 55px;
+    background: black;
+    font-size: 2.1rem;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50%;
+
+}
+
+#industries-section > article > p {
+    width: 83%;
+    float: right;
+}
+
+#industries-section > article > h4 {
+    width: 83%;
+    float: right;
+}
+
+/*  SECOND SECTION  */
+#target {
+    height: 200px;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+#target-background {
+    background: url(images/steel-bg.jpg);
+    background-position: center;
+    opacity: 0.5;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: 5;
+}
+
+#target > p {
+    width: 35%;
+    font-size: 2rem;
+    margin: auto;
+    z-index: 10;
+    position: relative;
+    padding: 65px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#target > p::first-line {
+    color: #bf9f75;
+} 
+
+/*  THIRD SECTION  */
+#wtcu {
+    height: 350px;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/background-choose-us.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#wtcu > .points {
+    width: 330px;
+    border: 2px solid #b79e88;
+    padding: 40px 20px;
+    margin: 20px;
+}
+
+#wtcu > article > p {
+    margin-top: 30px;
+}
+
+/*  Forth section  */
+
+#the-quote {
+    height: 550px;
+    background-image: url("images/consulting-woman.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 0;
+}
+
+#the-quote > article {
+    text-align: left;
+    width: 35%;
+    float: right;
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+    height: 100%;
+    padding: 60px 60px;
+}
+
+#the-quote > article > p {
+    display: inline;
+}
+
+q#quote {
+    quotes: "“" "„";
+}
+
+q::before, q::after { 
+    font-size: 200%;
+    color: #b79e88;
+}
+
+#the-quote #name {
+    height: 280px;
+    margin-top: 20px;
+    background: #080820;
+    color: white;
+}
+
+#the-quote #name > p:first-of-type {
+    text-align: right;
+    margin: 20px;
+    font-size: 0.9rem;
+    line-height: 37px;
+    color: #777580;
+}
+#the-quote #name > p:last-of-type {
+    text-align: left;
+    margin: 20px;
+    font-size: 1.9rem;
+    line-height: 37px;
+}
+
+/*  Fifth section  */
+
+.partners {
+    width: 180px;
+    height: 70px;
+}
+
+/*  FOOTER  */
+footer {
+    background-color: #080820;
+    padding: 30px 0;
+}
+
+footer .info {
+    width: 33%;
+    height: 100%;
+    display: inline-table;
+    padding: 0 100px;
+}
+
+footer > .info > h4 {
+    display: block;
+}
+
+footer > .info > ul > li{
+    margin: 20px 30px;
+    width: 50%;
+}
+
+footer > .info:nth-child(2) {
+    display: inline-flex;
+}
+
+footer > .info:nth-child(2) > ul {
+    display: flex;
+    width: 320px;
+    height: 160px;
+    flex-wrap: wrap;
+    margin: 38px 30px;
+    position: absolute;
+}
+
+footer > .info:nth-child(2) > ul > li {
+    width: 98px;
+    margin: 0 5px;
+}
+
+footer > .info:nth-child(2) > ul > li:nth-child(9), footer > .info:nth-child(2) > ul > li:nth-child(10){
+    display: block;
+    width: 100%;
+}    
+
+footer > .info:nth-child(2) > ul > li > a{
+    color: #846e65;
+}
+footer > .info:nth-child(3) > ul > li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    height: 120px;
+}
+footer > .info .iw {
+    width: 100%;
+}

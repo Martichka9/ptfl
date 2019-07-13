@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main {
+	width: 800px;
+}
+
+header, article {
+	border-radius: 15px 15px;
+}
+
+h1, button {
+	text-transform: capitalize;
+}
+
+header {
+	background-color: #dddddd;
+	padding: 20px;
+	margin: 30px auto;
+}
+
+h1 {
+	color: #9470dc;
+	font-size: 18px;
+	font-weight: 200;
+	text-align: center;
+}
+
+main {
+	margin: auto;
+	justify-content: center;
+	display: flex;
+}
+
+article {
+    width: 324px;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+article:last-of-type {
+    margin-right: 0px;
+}
+article .circle {
+    background-color: #9470dc;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    margin: auto;
+}
+article .circle p {
+    padding-top: 41%;
+    font-size: 30px;
+    color: white;
+}
+
+article > p, article > button {
+	margin-top: 30px;
+}
+
+article > p {
+    color: #b2aca4;
+}
+
+article > button {
+	width: 90%;
+	padding: 10px;
+	border-radius: 10px 10px;
+	background-color: #dddddd;
+	border: none;
+	color: #7c746e;
+}
+
+.circle:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+.circle:hover > p {
+	color: #9470dc;
+}
+
+button:hover {
+	background-color: white;
+	cursor: pointer;
+}

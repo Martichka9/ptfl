@@ -1,0 +1,99 @@
+@media screen and (max-width: 730px) {
+	*{
+		margin: 0;
+		padding:0 ;
+	}
+	body,html,header,nav, main,footer {
+		width: 100%;
+	}
+	#wrapper {
+		width: 90%;
+		margin: 0;
+	}
+	#wrapper {
+		padding: 5% 5%;
+	}
+	header {
+		height: 160px;
+	    background-position: center;
+	    background-size: cover;
+	}
+
+	header p {
+	    color: #f26013;
+	}
+
+	header nav ul {
+		margin: 0 auto;
+		width: 90%;
+	}
+	header nav ul li {
+	    padding: 10px 15px;
+    	width: 75px;
+	}
+	section {
+		display: block;
+		width: initial !important;
+	}
+	section div{
+		width: 95%;
+	}
+	section div div {
+		width: initial;
+	}
+
+	aside {
+		display: block;
+		margin: 20px 30px;
+		width: 93% !important;
+	}
+	footer {
+		text-align: center;
+	}
+	footer p {
+		margin: 5% 0;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	header h1 {
+		    padding: 10px 0;
+    font-size: 3.7rem;
+	}
+	header nav {
+		height: 210px;
+	}
+	header nav ul {
+		width: 86%;
+		padding: 0;
+	}
+	header nav ul li {
+		display: block;
+		width: 100%;
+	}
+
+	section,section div {
+		width: 93% !important;
+	}
+	section div {
+    	height: 360px!important;}
+	section div > div {
+		height: initial !important;
+		display: block;
+		width: 100%;
+		text-align: center;
+		background-color: #82bb73;
+	}
+	section article h3 {
+		text-align: center;
+	}
+	p {
+		font-size: 1rem;
+	}
+	aside {
+		margin: 0 30px !important;
+	}
+	aside h1, aside h2 {
+		text-align: center;
+	}
+}

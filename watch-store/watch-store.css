@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Lemon-Regular";
+    src: url(Lemon-Regular.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #602c74;
+	font-family: "Lemon-Regular", "Arial", sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+main {
+	margin: 2% auto;
+    width: 70%;
+    height: 480px;
+    padding: 0 35px;
+    background-color: #ffae31;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+main article {
+	text-align: center;
+    display: inline-table;
+    width: 26%;
+    height: 400px;
+    margin: 0px 30px;
+    background-color: #602c74;
+    border-radius: 15px 0 15px;
+}
+
+h1, h2, h3 {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	color: black;
+	font-size: 2.3rem;
+	text-transform: capitalize;
+	line-height: 60px;
+}
+
+h2, h3 {
+	margin-top: 10px;
+}
+
+h3 {
+	color: #ffc461;
+	font-size: 1rem;
+}
+
+img {
+	width: 80%;
+	border-radius: 50%;
+	margin-top: 10px;
+	border: 5px solid #826b73;
+}
+
+ul {
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+	text-align: left;
+}
+
+button {
+	display: block;
+    width: 85%;
+    margin: 10px auto;
+    background-color: white;
+    height: 30px;
+    border-radius: 30px 30px;
+    color: #924ff4;
+	font-family: "Lemon-Regular", sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}

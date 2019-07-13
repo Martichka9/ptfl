@@ -1,0 +1,78 @@
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(OpenSans-ExtraBold.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: OpenSans-ExtraBold, Helvetica, sans-serif;
+	background-color: #f0f0e8;
+}
+
+header, main {
+	width: 50%;
+}
+
+header {
+	padding: 20px;
+	margin: 30px auto;
+}
+
+header > h1, header > p {
+	text-align: center;
+	text-shadow:  1px 1px white;
+}
+
+h1 {
+	color: #009288;
+	font-size: 56px;
+	font-weight: 200;
+}
+
+header > p {
+	margin-top: 30px;
+	color: #847c7d;
+}
+
+header > p:last-of-type {
+	margin-top: 15px;
+}
+
+main {
+	margin: auto;
+	justify-content: center;
+	display: flex;
+}
+
+article {
+    width: 220px;
+    margin-right: 20px;
+    text-align: center;
+	border-left: 10px solid #f0f0e8;
+}
+
+article:last-of-type {
+    margin-right: 0px;
+}
+article .icon {
+    text-align: center;
+    margin: auto;
+}
+
+article > p {
+	margin-top: 30px;
+}
+
+article > p {
+    color: #b2aca4;
+}
+
+article:hover {
+	background-color: white;
+	border-left: 10px solid #009288;
+}

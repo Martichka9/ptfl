@@ -1,0 +1,200 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Calibri Light", sans-serif;
+	font-size: 16px;
+}
+/*HEADER STYLES*/
+#logo {
+	margin: 5px;
+	width: 100px;
+}
+
+nav {
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 1000;
+	background-color: #e67c1f;
+	display: flex;
+	justify-content: space-around;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+/*MAIN MENU*/
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background: #e67c1f;
+  z-index: 1000;
+}
+
+li ul, #menuIcon  {
+	display: none;
+}
+
+ul li {
+  background: #e67c1f;
+}
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li a:hover {
+	background: #000;
+	cursor: pointer;
+}
+/*SUBMENU*/
+li:hover > ul {
+  display: block;
+  position: absolute;
+  box-shadow: 2px 2px 15px;
+}
+
+li:hover a {
+	background: #e67c1f;
+}
+#subMenu1 {
+    margin: 0 0 0 67px;
+    width: 130px;
+}
+
+li li:hover #subMenu2 {
+  display: block;
+  top: 125px;
+  left: 130px;
+  width: 130px;
+}
+
+/*Heading*/
+.hr-solution {
+    display: flex;
+    flex-direction: column;
+    background: url("../../images/shv_sunrise_preview.jpg");
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 600px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, .7);
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, .7);
+}
+
+.subscribe-now {
+    width: 100px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #a0ce4e;
+    color: rgba(255, 255, 255, .9);
+}
+
+
+/*MAIN STYLES*/
+main {
+	width:80%;
+	margin:0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+/*FIRST ARTICLES*/
+article {
+	background: #fff;
+	display: grid;
+	width: 350px;
+	height: 325px;
+	overflow: hidden;
+	justify-items: center;
+	grid-template-rows: auto 135px auto;
+}
+
+h2{
+	font-family: "Verdana", sans-serif;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 200;
+}
+
+img {
+	opacity: 0.6;
+	margin: 0 0 20px 0;
+}
+
+article:hover {
+	transform: scale(1.15);
+	overflow: initial;
+	box-shadow: 2px 2px 15px;
+    height: max-content;
+	z-index: 1000;
+}
+
+article:hover a img{
+	opacity: 1;
+}
+
+p {
+	padding: 15px;
+	text-align: justify;
+
+}
+
+@media only screen and (max-width: 1300px) {
+	main {
+		width:100%;
+		
+	}
+  }
+
+@media only screen and (max-width: 1024px) {
+	#menuIcon {
+		display: block;
+		font-size: 30px;
+		line-height: 50px;
+	}
+	
+	#menuIcon:hover {
+		cursor: pointer;
+	}
+
+	#mainMenu {
+		display: none;
+		width:-webkit-fill-available;
+		flex-direction: column;
+		position: absolute;
+		top: 50px;	
+		text-align: center;
+	}
+	li:hover ul li, #subMenu1, li li:hover #subMenu2 {
+		width:-webkit-fill-available;
+		margin: 0 auto;
+		left: 0;
+	}
+}

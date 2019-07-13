@@ -1,0 +1,47 @@
+@media screen and (max-width: 639px) {
+	div.wrap {
+		width: 100%;
+	}
+	header div div {
+		height: 50px;
+		border-bottom: 2px solid #b5b9ba;
+		padding: 10px 20px !important;	}
+	header div div h1 {
+		width: 125px;
+		background-position: left;
+	}
+	header div div h2 {
+		opacity: 0;
+	}
+	#header-bottom-area {
+		display: none;
+	}
+
+	#product-menu {
+		display: block;
+		width: 100%;
+		padding: 0 !important;
+	}
+	#product-menu ul .product-type {
+		border-bottom: none;
+	}
+	main section div {
+		text-align: center;
+	}
+	#products-liked-list {
+		height: 1290px;
+	}
+	#products-liked-list div ul {
+		width: 100%;
+		height: 1215px;
+		overflow: scroll;
+	}
+	#products-suggestions-list ul{
+		height: 370px;
+		overflow: scroll;
+	}
+	footer #wrap .box {
+		margin: 0 auto;
+		clear: both;
+	}
+}

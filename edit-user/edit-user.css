@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto", Helvetica, sans-serif; 
+	font-size: 16px;
+	color: #1E1917;
+	background-color: #f4f4f4;
+}
+
+header, section {
+	width: 800px;
+	margin: auto;
+}
+header {
+	font-size: 2rem;
+	text-transform: uppercase;
+	border-top: 5px solid #324f5b;
+	border-right: 5px solid #324f5b;
+	background-color: white;
+	text-align: center;
+	margin-top: 30px;
+}
+
+label,span {
+	display: block;
+}
+
+label,span {
+	padding: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+	border: none;
+    border-left: 3px solid #324f5c;
+    border-top: 3px solid #324f5c;
+    width: 80%;
+    line-height: 30px;
+}
+
+#u-type {
+	display: flex;
+}
+#u-type .Broadband, #u-type .Radio {
+	width: 45%;
+	padding-left: 10px;
+}
+#u-type span, #u-type span {
+	display: inline-flex;
+	padding: 0;
+}
+
+#groups div {
+	display: flex;
+	margin: 10px 0;
+}
+
+#groups div input {
+	margin: 3px;
+}
+
+#groups div span {
+	padding: 0 5px;
+}
+
+#contacts {
+	margin: 20px 10px;
+}
+
+a {
+	color: #136F63;
+	font-size: 15px;
+}
+
+button {
+	background-color: transparent;
+	border:none;    
+	font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px 100px;
+    margin: 0 7% 5%;
+	color: #157367;
+	border-right: 3px solid #157367;
+	border-bottom: 3px solid #157367;
+}
+
+button[type="reset"] {
+	color: #ff5526;
+	border-right: 3px solid #ff5526;
+	border-bottom: 3px solid #ff5526;
+}

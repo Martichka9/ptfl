@@ -1,0 +1,72 @@
+/*TODO write CSS here*/
+
+* {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+body {
+	display: flex;
+	/*flex-direction: column;*/
+	flex-wrap: wrap;
+}
+
+header, .footer {
+	width: 100%;
+	line-height: 30px;
+}
+
+.aside-1, .aside-2, article {
+	display: inline-flex;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.aside-1, .aside-2 {
+	width: 20%;
+	padding-left: 9%;
+}
+
+header {
+	background-color: #fe6347;
+}
+
+article {
+	background-color: #00bffe;
+	width: 60%;
+	order: 2;
+}
+
+.aside-1 {
+	background-color: #fed700;
+	order: 1;
+}
+
+.aside-2 {
+	background-color: #ff69b3;
+	order: 3;
+}
+.footer {
+	background-color: #90ee90;
+	order: 4;
+}
+
+@media all and (max-width: 799px) {
+	article {
+	    width: 100%;
+		order: 1;
+	}
+
+	.aside-1, .aside-2 {
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 599px) {
+	.aside-1, .aside-2 {
+		width: 100%;
+		align-self: center;
+	}
+}

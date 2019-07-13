@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #c6b198;
+	color: white;
+	font-family: Lato, sans-serif;
+}
+
+li {
+	list-style-type: none;
+}
+
+nav {
+	margin: 50px 50px;
+	color: #ffffff;
+}
+
+nav .brand {
+	font-weight: bold;
+	font-size: 30px;
+	display: inline-block;
+
+}
+
+nav ul {
+	float: right;
+	margin-top: 10px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 0 15px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+nav ul li:last-of-type a {
+	border: 1px solid white;
+	border-radius: 30px 30px;
+
+}
+
+nav ul li:last-of-type a:hover {
+	background-color: #8a7363;
+	border: 1px solid #8a7363;
+
+}
+
+header {
+	text-align: center;
+}
+
+.header-title, .order-title, .potato-title {
+	text-transform: capitalize;	
+}
+
+header .header-title {
+	font-weight: 400;
+	font-size: 50px;
+	margin-top: 150px;
+}
+
+header .header-subtitle {
+	font-weight: 400;
+	margin-top: 30px;	
+}
+
+header .header-potato {
+    width: 30%;
+    margin-top: 65px;
+}
+
+main div {
+	color: black;
+	text-align: center;
+}
+
+main div.features {
+	background: url("images/potato-background.PNG");
+	background-size: cover;
+	background-position: center;
+	padding: 200px 0 200px 0;
+}
+
+.features-title, .features-subtitle, .order-title, .potato-title, .potato-description {
+	font-weight: 300;
+}
+
+.features-subtitle {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.buy-now {
+	padding: 50px 0;
+	background-color: white;
+}
+
+.potato-types {
+	margin-top: 50px;
+    padding: 0 15%;
+	font-size: 30px;
+}
+
+.order-title {
+	font-size: 55px;
+}
+
+.potato-types .potato {
+	width: 30%;
+	height: 640px;
+	display: inline-grid;
+	border-right: 2px solid #b5b5b5;
+}
+
+.potato-img {
+	width: 65%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.potato-price, .potato-description {
+    font-size: 20px;
+}
+
+.potato-description {
+    margin-top: 25px;
+}
+
+.btn-order {
+	color: #9bd230;
+	border: 2px solid #9bd230;
+	background: none;
+	text-transform: uppercase;
+	border-radius: 30px 30px;
+	width: 100px;
+	padding: 10px;
+	margin: 25px auto;
+}
+
+footer {
+	height: 55px;
+	padding-top: 30px;
+	background-color: #867260;
+}
+
+.footer-text {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}

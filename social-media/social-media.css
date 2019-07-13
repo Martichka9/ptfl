@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #292929;
+	color: white;
+}
+
+footer {
+	width: 800px;
+	margin: 30px auto;
+}
+article {
+	display: inline-table;
+	margin: 0 15px;
+}
+
+article:last-of-type {
+	width: 250px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 16px;
+}
+ul, img {
+	margin-top: 20px;
+}
+
+li {
+	list-style-type: none;
+	margin: 0px;
+}
+a {
+	color: #c4bb93;
+	text-transform: capitalize;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#links li, #links li a {
+	display: inline-block;
+    width: 55px;
+    height: 55px;
+}
+
+#fb{
+	background: url("images/social.jpg") -10px -1px;
+}
+
+#in{
+	background: url("images/social.jpg") -202px -1px;	
+}
+
+#yt{
+	background: url("images/social.jpg") -521px -1px;
+}
+
+#tw{
+	background: url("images/social.jpg") -74px -1px;	
+}
+
+#fb:hover{
+	background: url("images/social.jpg") -10px 60px;
+}
+
+#in:hover{
+	background: url("images/social.jpg") -202px 60px;	
+}
+
+#yt:hover{
+	background: url("images/social.jpg") -521px 60px;
+}
+
+#tw:hover{
+	background: url("images/social.jpg") -74px 60px;	
+}

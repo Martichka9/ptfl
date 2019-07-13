@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Vollkorn-Regular";
+    src: url(Vollkorn-Regular.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma", sans-serif;
+	font-size: 16px;
+	color:#acaab2;
+}
+
+h1, h2, p.price {
+	font-family: "Vollkorn-Regular", serif;
+	text-align: center;
+	color: #778495;
+}
+
+header h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+main {
+	margin: 2% auto;
+	width: 65%;
+}
+
+main article {
+	display: inline-table;
+	width: 30%;
+	margin: 0 1%;
+	height: 500px;
+	border: 2px solid #f8f9fb;
+}
+
+h2 {
+	text-transform: capitalize;
+	font-size: 30px;
+	background-color: #ebeff2;
+	margin: 0;
+	line-height: 70px;
+	font-weight: 200;
+}
+
+article:hover h2, article:hover button	 {
+	background-color: #65d3e2;
+	cursor: pointer;
+	border-color: #daffff;
+}
+
+article:hover p.price {
+	color: #65d3e2;
+	cursor: pointer;
+}
+
+p.price {
+	font-size: 60px;
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	margin-top: 35px;
+	height: 260px;
+}
+
+li {
+	list-style-type: none;
+	margin: 5% 5%;
+	padding: 5px;
+	border-bottom: 2px solid #f8f9fb;
+}
+
+button {
+	display: block;
+    width: 85%;
+    margin: auto;
+    background-color: #ddd;
+    height: 55px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    color: white;
+    border: 1px solid #e9e9e9;
+}
