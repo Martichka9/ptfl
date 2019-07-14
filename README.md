@@ -1,2 +1,4 @@
 # ptfl
- HTML and CSS course homeworks
+ HTML and CSS course homeworks collected in one place.
+ 
+ Some tasks are combined to one page.
