@@ -4,13 +4,19 @@ body {
 	font-size: 14px;
 	font-family: 'Tahoma', 'Helvetica', sans-serif;
 }
-section,header {
-	width: 60%;
+#lSForms,header {
+	width: 75%;
     margin: 0 auto;
 }
+
+form,header {
+    display: grid;
+}
 header {
-	text-align: center;
-	border-bottom: 2px solid #dadada;
+    text-align: center;
+    border-bottom: 2px solid #dadada;
+    grid-row-gap: 5px;
+    grid-template-rows: 50% 50%;
 }
 h1 {
 	font-weight: 100;
@@ -19,14 +25,16 @@ h1 {
     padding: 20px;
 }
 
-article {
-	width: 49%;
-    padding: 10px 30px;
-    box-sizing: border-box;
+#lSForms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-article, form, label {
-	display: inline-grid;
+.forms {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%
 }
 
 h2 {
@@ -35,6 +43,7 @@ h2 {
     font-weight: bolder;
     font-family: Anton;
 }
+
 input {
 	border-radius: 5px;
     line-height: 25px;
@@ -45,23 +54,19 @@ input {
     width: 100%;
 }
 
-#checkMe {
-	display: flex;
-}
-
 #checkMe input {
-	width: 10%;
+    width: initial;
 }
 
 .icon {
-	position: absolute;
+    position: absolute;
     font-size: 20px;
+    right: 0;
     width: 25px;
     height: 25px;
     color: white;
-    float: right;
     text-align: center;
-    margin-left: 22%;
+    margin-right: 20%;
     margin-top: 16px;
 }
 
@@ -78,7 +83,7 @@ a {
 }
 form button {
 	display: block;
-    margin: 20px 0;
+    margin: 15px auto;
     width: 150px;
     border: 1px solid #dbdbdb;
     background: #f7f7f7;
@@ -89,14 +94,33 @@ form button {
     float: right;
     box-shadow: 3px 3px 5px 1px #eaeaea;
 }
-
-
-
-
-
-
-
 form button:hover {
 	background-color: #44cfd0;
 	color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1400px){
+    .forms {
+        width: 50%;
+    }
+    #new-acc form label .icon {
+        right:33%;
+    }
+    #login-form form label .icon {
+        right:-4%;   
+    }
+}
+@media only screen and (min-width: 1400px){
+    .forms {
+        width: 35%;
+    }
+    #new-acc form label .icon {
+        right:35.5%;
+    }
+    #login-form form label .icon {
+        right:2%;   
+    }
+    #lSForms {
+        justify-content: space-evenly;
+    }
 }
