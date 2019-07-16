@@ -10,51 +10,48 @@
       <h1>Login or Create a Free Account!</h1>
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
     </header>
-    <section>
-      <article class="new-acc">
+    <section id="lSForms">
+      <article id="new-acc" class="forms">
         <h2>New Account:</h2>
         <form id="request-form" method="post">
-          <label id="p-details">
-            <div>
+           <label class="p-details">
               <span class="icon green"><i class="fas fa-check"></i></span>
               <input id="u-name" type="text" placeholder="Username" />
-            </div>
-            <div>
+            </label>
+            <label class="p-details">
               <span class="icon green"><i class="fas fa-check"></i></span>
               <input id="email" type="email" placeholder="E-mail" />
-            </div>
-            <div>
+            </label>
+            <label class="p-details">
               <span class="icon red"><i class="fas fa-times"></i></span>
               <input id="pass" type="password" placeholder="Password" />
-            </div>
-            <div>
+            </label>
+            <label class="p-details">
               <span class="icon red"><i class="fas fa-times"></i></span>
               <input id="confirm-pass" type="password" placeholder="Repeat Password" />
-              </div>
-          </label>
+            </label>
           <label id="checkMe">
-            <input type="checkbox" value="
-            <span>Please inform me of upcoming freebies, promotions and news</span>" />            
+            <input type="checkbox" value=""/>
             <span>Please inform me of upcoming freebies, promotions and news</span>
           </label>
           <button type="submit">Create Account</button>
         </form>
       </article>
-      <article id="login-form">
+      <article id="login-form" class="forms">
         <h2>Login:</h2>
         <form id="request-form" method="post">
           <label id="p-details">
-            <div>
               <span class="icon green"><i class="fas fa-check"></i></span>
               <input id="l-u-name" type="text" placeholder="Username" />
-            </div>
-            <div>
-              <span class="icon red"><i class="fas fa-times"></i></span>
-              <input id="l-pass" type="text" placeholder="Password" />
-            </div>
-            <a href="#">I Forgot my Password!</a>
+            </label>
+          <label class="p-details">
+            <span class="icon red"><i class="fas fa-times"></i></span>
+            <input id="l-pass" type="text" placeholder="Password" />
           </label>
+            <a href="#" id="fp">I Forgot my Password!</a>
           <button type="submit">Login</button>
         </form>
       </article>
     </section>
+</body>
+</html>
