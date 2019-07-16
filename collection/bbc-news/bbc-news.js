@@ -11,4 +11,16 @@ $('#menuIcon').click(function() {
     }
     $(this).data("clicks", !clicks);
 });
-  
+$(function() {
+    $(document).click(function(e) {    
+      var offset = $(this).offset();
+      var relativeX = (e.pageX - offset.left);
+      var relativeY = (e.pageY - offset.top);
+    
+      if (relativeY > 476){
+        $('#menuIcon').removeClass("selectedM");
+        $('#menuIcon').addClass("notSelectedM");
+        $('header #mainMenu').css('display','none');
+      }
+    });
+});
