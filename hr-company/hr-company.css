@@ -26,19 +26,17 @@ a {
 
 img {
     max-width: 100%;
-    min-width: 100px;
 }
 
 nav {
     background: #ffffff;;
 }
 article {
-    width: calc(100% - 20px)
+    width: 30%;
+    display: grid;
+    justify-items: center;
+    margin: 15px 30px;
 }
-article p {
-    max-width: 60%;
-}
-
 main h2 {
     text-align: center;
 }
@@ -108,13 +106,13 @@ a:hover#menu-icon {
 }
 
 .business {
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-evenly;
 }
 
 @media all and (max-width: 880px) {
     #menu-icon {
-        background-image: url("images/menu-icon.png");
+        background-image: url("../images/menu-icon.png");
         display: block;
         width: 40px;
         height: 40px;
@@ -130,13 +128,13 @@ a:hover#menu-icon {
         display: none;
     }
 
-    main section{
+    main .business{
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    main section article p {
-        max-width: 100%;
+    .business article {
+        width: 90%;
     }
 }
