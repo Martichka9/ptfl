@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Japanese Kitchen</title>
     <link rel="stylesheet" href="japanese-kitchen.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
 <header>
+    <div id="menuIcon"><i class="fas fa-book-open"></i></div>
     <h1>Yoko's Kitchen</h1>
     <nav>
         <ul>
@@ -19,6 +21,19 @@
     </nav>
 </header>
 <main>
+    <aside id="sideBar" class="aside">
+        <section class="popular-recipes">
+            <h2>Popular Recipes</h2>
+            <ul>
+                <li><a href="#">Yakitori (grilled chicken)</a></li>
+                <li><a href="#">Tsukune (minced chicken patties)</a></li>
+                <li><a href="#">Okonomiyaki (savory pancakes)</a></li>
+                <li><a href="#">Mizutaki (chicken stew)</a></li>
+                <li><a href="#">Sushi</a></li>
+                <li><a href="#">Tempura</a></li>
+            </ul>
+        </section>
+    </aside>
     <section class="courses">
         <article>
             <figure>
@@ -73,19 +88,6 @@
                 Japanese cookery.</p>
         </article>
     </section>
-    <aside id="sideBar" class="aside">
-        <section class="popular-recipes">
-            <h2>Popular Recipes</h2>
-            <ul>
-                <li><a href="#">Yakitori (grilled chicken)</a></li>
-                <li><a href="#">Tsukune (minced chicken patties)</a></li>
-                <li><a href="#">Okonomiyaki (savory pancakes)</a></li>
-                <li><a href="#">Mizutaki (chicken stew)</a></li>
-                <li><a href="#">Sushi</a></li>
-                <li><a href="#">Tempura</a></li>
-            </ul>
-        </section>
-    </aside>
 </main>
 <footer>
     &copy; 2017 Yoko's Kitchen
@@ -96,7 +98,7 @@ $(document).scroll(function() {
     var y = $(document).scrollTop(), 
         sideBar = $("#sideBar"); 
     var sideBarTop = $('#sideBar').offset().top;
-    if(y >= 220)  {
+    if(y >= 220 && $(window).width() > 1260)  {
         sideBar.removeClass("aside");
         sideBar.addClass("fixedSide");
     } else {
@@ -104,6 +106,8 @@ $(document).scroll(function() {
         sideBar.addClass("aside");
     }
 });
+
+//$('#sideBar').append($(window).width());
 </script>
 </body>
 </html>
