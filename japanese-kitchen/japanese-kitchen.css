@@ -23,14 +23,19 @@ header {
 h1 {
 	text-align: right;
 	padding: 40px 60px;
+	text-shadow: 1px 1px 12px #e7dbce;
 	font-size: 65px;
+}
+
+#menuIcon {
+	display: none;
 }
 
 nav {
 	font-family: Lato, sans-serif;
 	background-position: top;
     height: 36px;
-    border-top: 3px solid #2d1f16;
+    border-top: 4px solid #2d1f16;
     width: 100%
 }
 
@@ -61,25 +66,27 @@ nav ul li a.selected {
 main{
 	background-color: white;
 	margin-top: 4px;
+	display: flex;
 }
 
 main > .courses {
     width: 70%;
     border-right: 2px solid #f4f4f4;
     padding: 20px 0 20px 20px;
-}
-
-.courses, aside{
-	display: inline-grid;
+    display: flex;
+    flex-direction: column;
+    order: 1;
 }
 
 main > aside.aside {
     width: 27%;
     margin-top: 60px;
+    order: 2;
 }
 .fixedSide {
   position: fixed;
   top : 50px;
+  right: 15%;
   margin-top : 0;
   width : 19%;
 }
@@ -130,7 +137,7 @@ article > p {
 
 .popular-recipes > ul > li {
 	list-style-type: none;
-	padding: 10px 0;
+	padding: 5px;
 	border-bottom: 2px solid #f4f4f4;
 }
 
@@ -146,4 +153,113 @@ footer {
 	padding: 10px;
 	font-size: 18px;
 	bottom: 0;
+}
+
+/*aside hover*/
+.popular-recipes > ul > li:hover {
+    list-style-type: none;
+    border-bottom: 2px solid #f4f4f4;
+    background: rgba(220, 104, 130,0.5);
+    transform: scale(1.2);
+}
+.popular-recipes > ul > li:hover a {
+	color: #fff;
+}
+
+@media only screen and (max-width: 1500px){
+	header, main {
+    	width: 85%;
+	}
+	.fixedSide {
+    	right: 10%;
+	}
+}
+@media only screen and (max-width: 1260px){
+	main {
+		flex-direction: column-reverse;
+	}
+	main > .courses {
+	    width: 100%;
+	    border-right: none;
+	}
+	main > aside.aside {
+	    width: initial;
+	    margin: 15px 15px;
+	    order: 2;
+	}
+	.popular-recipes  {
+	    text-align: center;
+	}
+	.popular-recipes > h2 {
+	    margin: 10px 0;
+	    width: 100%;
+	}
+	.popular-recipes > ul {
+    	margin: 0 auto;
+    	width: 85%;
+	}
+	.popular-recipes > ul > li {
+		padding: 0;
+	}
+	.popular-recipes > ul > li a {
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 960px){
+	header, main {
+    	width: 85%;
+	}
+	main > .courses {
+		padding: 0;
+	}
+	.courses article {
+		display: flex;
+    	flex-direction: column;
+		margin: 0 auto;
+    padding: 0 5px;
+	}
+	div> h2, div > h3, article > p {
+    	text-align: center;
+	    width: 100%;
+	    margin: 10px 0 0;
+	}
+	figure {
+	    display: block;
+	    margin: 25px auto 0;
+	}
+}
+
+
+@media only screen and (max-width: 760px){
+  header, main {
+    width: 95%;
+  }
+	nav {
+		display: none;
+	}
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	header h1 {
+		width: min-content;
+	}
+
+	#menuIcon {
+	    display: block;
+	    font-size: 50px;
+	    text-shadow: 0px 0px 15px #e7dbce;
+	}
+
+	#menuIcon:hover {
+		cursor: pointer;
+	}
+
+	header h1 {
+		margin: 40px 0;
+		padding: 0;
+	}
 }
