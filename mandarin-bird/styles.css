@@ -25,9 +25,9 @@ body{
 /*-------------------------------------------------*/
 
 header {
-    width: 1000px;
+    width: 85%;
     margin: 0 auto;
-    background-image: url("resources/Picture_1.jpg");
+    background-image: url("../images/Picture_1.jpg");
     background-repeat: no-repeat ;
     background-size: 100%;
     border-bottom: 10px solid #b7cc89;
@@ -54,15 +54,15 @@ header > nav {
 }
 header nav > ul {
     margin-top: 45px;
+    display: flex;
 }
 header nav > ul li{
     width: 200px;
-    display: inline-block;
+    list-style-type: none;
     text-align: center;
     font-size: 18px;
     background-color: white;
-    padding: 10px 0px;
-    float: left;
+    padding: 10px 5px;
 }
 header nav > ul li a{
     text-decoration: none;
@@ -75,18 +75,17 @@ header nav > ul li:hover{
 /*-------------------------------------------------*/
 
 main {
-    width: 1000px;
+    width: 85%;
     margin: 0 auto;
     background-color: #eae7ee;
     margin-top: 30px;
-    overflow: auto;
+    display: flex;
 }
 /*---------------------------*/
 
 main aside{
-    float: left;
     margin-left: 30px;
-    width: 270px;
+    width: 28%;
     margin-bottom: 23px;
     margin-top: 40px;
 }
@@ -116,9 +115,8 @@ main > aside > article > p:nth-child(5){
 
 main section{
     margin-top: 40px;
-    float: left;
     margin-left: 30px;
-    width: 660px;
+    width: 65%;
 }
 main section > div{
     background-color: white;
