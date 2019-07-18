@@ -8,8 +8,8 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-header, main {
-	width: 800px;
+header, main {    
+	width: 42%;
 }
 
 header, article {
@@ -34,14 +34,15 @@ h1 {
 }
 
 main {
-	margin: auto;
-	justify-content: center;
-	display: flex;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 article {
-    width: 324px;
-    margin-right: 20px;
+	margin-top: 15px;
     padding: 10px;
     text-align: center;
     background-color: #eeeeee;
