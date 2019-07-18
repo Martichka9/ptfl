@@ -7,17 +7,51 @@
 </head>
   <body>
     <section>
-        <img id="the-user" src="images/image-photo.jpg" alt="the user" />
+        <img class="the-user-img" src="../images/image-photo.jpg" alt="the user" />
         <article>
           <div id="the-triangle"></div>
-          <h2>Flat Business Profile Widget</h2>
-          <form id="login">
+          <h2>Flat Business Profile Widget <span class="difs">Type 1 with FontAwesome</span></h2>
+          <form id="login1">
             <label>
               <i class=" the-user fas fa-user"></i>
               <input type="text" placeholder="Name"  name="name" />
             </label>
             <label>
               <i class=" triangle fas fa-lock"></i>
+              <input type="password" placeholder="********"  name="pass" />
+            </label>
+            <input id="submit" type="submit" value="Submit">
+          </form>
+        </article>
+    </section>
+    <section>
+      <img class="the-user-img" src="../images/image-photo.jpg" alt="the user" />
+      <article>
+        <div id="the-triangle"></div>
+        <h2>Flat Business Profile Widget <span class="difs">Type 2 with &lt;img&gt;</span></h2>
+        <form id="login2">
+          <label>
+            <img class="the-user-img" src="../images/user.png" alt="triangle" />
+            <input type="text" placeholder="Name"  name="name" />
+          </label>
+          <label>
+            <img class="the-user-img" src="../images/pass.png" alt="triangle" />
+            <input type="password" placeholder="********"  name="pass" />
+          </label>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </article>
+    </section>
+    <section>
+        <img class="the-user-img" src="../images/image-photo.jpg" alt="the user" />
+        <article>
+          <div id="the-triangle"></div>
+          <h2>Flat Business Profile Widget <span class="difs">Type 3 with background images</span></h2>
+          <form id="login3">
+            <label>
+              <input type="text" placeholder="Name"  name="name" />
+            </label>
+            <label>
               <input type="password" placeholder="********"  name="pass" />
             </label>
             <input id="submit" type="submit" value="Submit">
