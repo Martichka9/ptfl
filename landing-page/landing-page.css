@@ -11,6 +11,7 @@ body {
 
 li {
     list-style-type: none;
+    margin: 0 10px;
 }
 a {
     text-decoration: none;
@@ -19,14 +20,11 @@ a {
 
 h2 {
     font-size: 2.5rem;
+    width: 100%;
 }
 
 section, header, #wtcu > article > h3 {
     text-align: center;
-}
-
-section {
-    padding: 50px 60px;
 }
 
 #wtcu, footer {
@@ -34,9 +32,9 @@ section {
 }
 /*  HEADER STYLE  */
 header {
-    background-image: url(images/Layer-759_02.jpg);
-    background-position: top left;
-    background-size: 2300px;
+    background-image: url(../images/Layer-759_02.jpg);
+    background-position: center;
+    background-size: cover;
     height: 735px;
     padding-top: 20px;
     color: white;
@@ -45,12 +43,14 @@ header {
 #main-menu {
     background-color: #caa16d;
     width: 60%;
-    height: 80px;
     margin: auto;
     opacity: 0.9;
 }
-#main-menu ul li {
-    display: inline-block;
+#main-menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #main-menu ul li a {
@@ -72,7 +72,7 @@ h1 {
 
 header > p {
     font-size: 1.7rem;
-    width: 24%;
+    width: 455px;
     margin: 50px auto;
 }
 
@@ -83,15 +83,29 @@ header > a {
     box-shadow: 1px 1px 1px rgba(8,8,32,0.84);
 }
 
+header > a:hover {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
 /*  MAIN STYLE  */
 /*  FIRST SECTION  */
+#industries-section {
+    width: 80%;
+    margin: 50px auto;
+}
+#industries-section,#wtcu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .points {
-    display: inline-table;
-    width: 25%;
-    height: 100px;
-    padding-top: 20px;
-    margin-top: 20px;
-    text-align: left;
+    width: 400px;
+    margin: 20px;
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 10px;
+    grid-template-rows: 55px 20px 40px;
 }
 
 .industry-icon {
@@ -107,17 +121,6 @@ header > a {
     border-radius: 50%;
 
 }
-
-#industries-section > article > p {
-    width: 83%;
-    float: right;
-}
-
-#industries-section > article > h4 {
-    width: 83%;
-    float: right;
-}
-
 /*  SECOND SECTION  */
 #target {
     height: 200px;
@@ -126,7 +129,7 @@ header > a {
 }
 
 #target-background {
-    background: url(images/steel-bg.jpg);
+    background: url(../images/steel-bg.jpg);
     background-position: center;
     opacity: 0.5;
     background-size: cover;
@@ -137,7 +140,7 @@ header > a {
 }
 
 #target > p {
-    width: 35%;
+    width: 665px;
     font-size: 2rem;
     margin: auto;
     z-index: 10;
@@ -152,10 +155,10 @@ header > a {
 
 /*  THIRD SECTION  */
 #wtcu {
-    height: 350px;
-    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/background-choose-us.jpg);
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/background-choose-us.jpg);
     background-size: cover;
     background-position: top;
+    padding: 30px 0;
 }
 
 #wtcu > .points {
@@ -164,16 +167,13 @@ header > a {
     padding: 40px 20px;
     margin: 20px;
 }
+.pointsWtcu{
 
-#wtcu > article > p {
-    margin-top: 30px;
 }
-
 /*  Forth section  */
-
 #the-quote {
     height: 550px;
-    background-image: url("images/consulting-woman.jpg");
+    background-image: url("../images/consulting-woman.jpg");
     background-size: cover;
     background-position: center;
     padding-bottom: 0;
@@ -181,11 +181,12 @@ header > a {
 
 #the-quote > article {
     text-align: left;
-    width: 35%;
+    width: 665px;
     float: right;
     background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
-    height: 100%;
-    padding: 60px 60px;
+    height: 89%;
+    padding: 60px 60px 0;
+    margin: 60px 60px 0;
 }
 
 #the-quote > article > p {
@@ -223,6 +224,12 @@ q::before, q::after {
 }
 
 /*  Fifth section  */
+#brandsIcons {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;
+    padding: 30px 0;
+}
 
 .partners {
     width: 180px;
@@ -233,17 +240,15 @@ q::before, q::after {
 footer {
     background-color: #080820;
     padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 footer .info {
-    width: 33%;
+    width: 370px;
     height: 100%;
-    display: inline-table;
-    padding: 0 100px;
-}
-
-footer > .info > h4 {
-    display: block;
 }
 
 footer > .info > ul > li{
@@ -251,17 +256,11 @@ footer > .info > ul > li{
     width: 50%;
 }
 
-footer > .info:nth-child(2) {
-    display: inline-flex;
-}
-
 footer > .info:nth-child(2) > ul {
     display: flex;
-    width: 320px;
     height: 160px;
     flex-wrap: wrap;
-    margin: 38px 30px;
-    position: absolute;
+    margin: 20px 30px;
 }
 
 footer > .info:nth-child(2) > ul > li {
@@ -277,13 +276,33 @@ footer > .info:nth-child(2) > ul > li:nth-child(9), footer > .info:nth-child(2) 
 footer > .info:nth-child(2) > ul > li > a{
     color: #846e65;
 }
+footer > .info:nth-child(3) > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 245px;
+}
 footer > .info:nth-child(3) > ul > li {
-    display: inline-block;
     margin: 0;
-    padding: 0;
     width: 120px;
     height: 120px;
 }
-footer > .info .iw {
+
+footer > .info .iw {/*Image width*/
     width: 100%;
+}
+
+@media only screen and (max-width: 1360px) {
+    #main-menu {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 680px) {
+    #target p {
+        padding: 65px 0;
+        width: 99%
+    }
+    #the-quote > article {
+    width: initial;
+    margin: 60px 0 0;
 }
