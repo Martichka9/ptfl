@@ -1,4 +1,4 @@
-body,h3,p {
+body,h3,p,ul {
 	margin: 0;
 	padding: 0;
 	font-family: "Calibri Light", sans-serif;
@@ -17,6 +17,7 @@ nav {
 	background-color: #e67c1f;
 	display: flex;
 	justify-content: space-around;
+	box-shadow: 0px 0px 3px;
 }
 
 a {
@@ -27,8 +28,6 @@ a {
 nav ul {
   list-style: none;
   display: flex;
-  padding: 0;
-  margin: 0;
   background: #e67c1f;
   z-index: 1000;
 }
@@ -56,12 +55,9 @@ ul li a:hover {
 li:hover > ul {
   display: block;
   position: absolute;
-  box-shadow: 2px 2px 15px;
+  box-shadow: 1px 1px 10px;
 }
 
-li:hover a {
-	background: #e67c1f;
-}
 #subMenu1 {
     margin: 0 0 0 67px;
     width: 130px;
@@ -74,11 +70,12 @@ li li:hover #subMenu2 {
   width: 130px;
 }
 
-/*Heading*/
+/*Header*/
 .hr-solution {
     display: flex;
     flex-direction: column;
-    background: url("../../images/shv_sunrise_preview.jpg");
+    /*background: url("../../images/shv_sunrise_preview.jpg");*/
+    background: url("https://www.publicdomainpictures.net/pictures/30000/nahled/yellow-autumn.jpg");
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -91,6 +88,10 @@ li li:hover #subMenu2 {
     text-align: center;
 }
 
+.hr-solution h1, .hr-solution h2 {
+	text-shadow: 1px 1px 10px #fcb000;
+}
+
 .learn-more {
     width: 100px;
     padding: 10px;
@@ -99,7 +100,8 @@ li li:hover #subMenu2 {
     color: rgba(0, 0, 0, .7);
     font-weight: bold;
     background: transparent;
-    border: 1px solid rgba(0, 0, 0, .7);
+	border: 1px solid rgba(0, 0, 0, .7);
+	text-shadow: 1px 1px 10px #fcb000;
 }
 
 .subscribe-now {
@@ -113,18 +115,24 @@ li li:hover #subMenu2 {
     color: rgba(255, 255, 255, .9);
 }
 
+.learn-more:hover, .subscribe-now:hover {
+	background: #a0ce4e;
+    color: rgba(0, 0, 0, .7);
+	border: none;
+	text-shadow: none;
+}
 
 /*MAIN STYLES*/
 .sec1{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 30px;
-    box-sizing: border-box;
-    min-height: 550px;
+	width:80%;
+	margin:0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 30px;
+	box-sizing: border-box;
+  min-height: 550px;
 }
 
 #sec1Heading {
@@ -173,7 +181,7 @@ p {
 }
 
 /*ITNEWS STYLES*/
-#itNews, #numbers {
+#itNews, #numbers  {
 	width: 80%;
     margin: 0 auto;
     padding: 0 30px;
@@ -224,6 +232,11 @@ p {
 .numbers {
     display: grid;
     grid-template-rows: 165px 60px 40px;
+    width: 300px;
+    margin:10px;
+    border-radius: 10px 10px;
+    padding: 15px 0;
+    background-color: #eeeeee;
 }
 
 #numbers h2{width: 100%; margin: 0 0 40px}
