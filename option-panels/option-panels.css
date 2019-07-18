@@ -1,79 +1,51 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Option Panels</title>
+    <link rel="stylesheet" href="option-panels.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="selected">all </a></li>
+                <li><a href="#">css </a></li>
+                <li><a href="#">html </a></li>
+                <li><a href="#">jquery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="../images/image-01.JPG" alt="img1" />
+            <article>
+                <h3>small item</h3>
+                <p>Donec iaculis, metus at scelerisque sollicitudin, quam turpis tortor, in rhoncus ante odio ac dolor.</p>
+            </article>
+        </section>
+        <section>
+            <img src="../images/image-02.JPG" alt="img2" />
+            <article>
+                <h3>full width item</h3>
+                <p>Nunc a rutrum massa, et maximus leo.</p>
+            </article>
+        </section>
+        <section>
+            <img src="../images/image-03.JPG" alt="img3" />
+            <article>
+                <h3>image list</h3>
+                <p>Cras imperdiet tellus enim, nec rhoncus ex accumsan eu. Nam fringilla ultrices.</p>
+            </article>
+        </section>
+        <section>
+            <img src="../images/image-04.JPG" alt="img4" />
+            <article>
+                <h3>slideshow</h3>
+                <p>Integer ut risus id nibh finibus ultrices a in leo. Nam lorem elit.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
 
-body {
-	background-color: #cacaca;
-	font-size: 15px;
-	font-family: Tahoma, Arial, sans-serif; 
-}
-
-nav {
-	width: 64%;
-	padding: 20px;
-	background-color: white;
-	margin: 30px auto;
-}
-
-ul li {
-	list-style-type: none;
-	display: inline-block;
-	padding: 15px;
-}
-
-ul li a {
-	text-decoration: none;
-	color: black;
-	text-transform: uppercase;
-}
-
-.selected {
-	color: #a65068;
-	text-transform: capitalize;
-}
-
-main {
-	margin: auto;
-	width: 66%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-section {
-    width: 300px;
-    height: 350px;
-}
-
-section:last-of-type {
-    margin-right: 0px;
-}
-section img {
-    width: 100%;
-    overflow: hidden;
-    height: 200px;
-}
-
-section article {
-    background-color: white;
-    padding: 20px;
-    height: 100px;
-}
-
-h3 {
-	text-transform: uppercase;
-	font-weight: 300;
-}
-
-section article p {
-	margin-top: 15px;
-	font-size: 16px;
-}
-
-@media only screen and (max-width:1860px) {
-	main {
-		justify-content: space-evenly;
-	}
-}
