@@ -1,4 +1,17 @@
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1024px) {
+	main {
+		justify-content: center;
+		flex-direction: column;
+	}
+	main section{width:91%;}
+	main aside{width: 60%;margin: 40px auto 23px;}
+}
+
+@media screen and (max-width: 1200px) {
+	#wrapper{width:100%;}
+}
+
+@media screen and (max-width: 768px) {
 	*{
 		margin: 0;
 		padding:0 ;
@@ -14,7 +27,6 @@
 		padding: 5% 5%;
 	}
 	header {
-		height: 160px;
 	    background-position: center;
 	    background-size: cover;
 	}
@@ -28,7 +40,6 @@
 		width: 90%;
 	}
 	header nav ul li {
-	    padding: 10px 15px;
     	width: 75px;
 	}
 	section {
@@ -55,7 +66,7 @@
 	}
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 480px) {
 	header h1 {
 		    padding: 10px 0;
     font-size: 3.7rem;
