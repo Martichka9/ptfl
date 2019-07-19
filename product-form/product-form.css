@@ -7,7 +7,7 @@ body {
 }
 
 section {
-	width: 60%;
+	width: 740px;
     margin: 70px auto;
 }
 
@@ -18,7 +18,8 @@ article {
 }
 
 #left, #right {
-	display: inline-grid;
+    display: grid;
+    align-items: center;
 	width: 50%;
 }
 
@@ -97,4 +98,18 @@ form button {
 form button:hover {
 	background-color: #44cfd0;
 	color: white;
+}
+
+@media only screen and (max-width: 780px) {
+    section {
+        width: 80%;
+    }
+    article {
+        flex-wrap: wrap;
+    }
+    #left, #right {
+        width: 100%;
+    }
+    #left {    border-radius: 30px 30px 0 0;}
+    #right {}
 }
