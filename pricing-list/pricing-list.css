@@ -24,12 +24,15 @@ header h1 {
 
 main {
 	margin: 2% auto;
-	width: 65%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 main article {
 	display: inline-table;
-	width: 30%;
+	width: 266px;
 	margin: 0 1%;
 	height: 500px;
 	border: 2px solid #f8f9fb;
@@ -84,4 +87,17 @@ button {
     text-transform: capitalize;
     color: white;
     border: 1px solid #e9e9e9;
+}
+
+@media only screen and (max-width:1360px) {
+	main article {
+		display: grid;
+		height: unset;
+		margin-top: 15px;
+		padding: 5px;
+	}
+	ul {
+		margin-top: 0;
+		height: fit-content;
+	}
 }

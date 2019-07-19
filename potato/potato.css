@@ -18,23 +18,25 @@ li {
 nav {
 	margin: 50px 50px;
 	color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav .brand,.footer-text  {
+	font-weight: bold;
+
+}
+header .header-title, nav ul li a, header .header-subtitle  {
+	font-weight: 400;
 }
 
 nav .brand {
-	font-weight: bold;
 	font-size: 30px;
-	display: inline-block;
-
 }
 
 nav ul {
-	float: right;
-	margin-top: 10px;
-}
-
-nav ul li {
-	display: inline-block;
-	padding: 0 15px;
+	display: flex;
 }
 
 nav ul li a {
@@ -42,22 +44,19 @@ nav ul li a {
 	text-decoration: none;
 	padding: 10px 10px 10px 10px;
 	text-transform: uppercase;
-	font-weight: 400;
 }
 
 nav ul li:last-of-type a {
 	border: 1px solid white;
 	border-radius: 30px 30px;
-
 }
 
 nav ul li:last-of-type a:hover {
 	background-color: #8a7363;
 	border: 1px solid #8a7363;
-
 }
 
-header {
+header, main div, .footer-text {
 	text-align: center;
 }
 
@@ -66,39 +65,40 @@ header {
 }
 
 header .header-title {
-	font-weight: 400;
 	font-size: 50px;
-	margin-top: 150px;
+	margin-top: 130px;
 }
 
 header .header-subtitle {
-	font-weight: 400;
 	margin-top: 30px;	
 }
 
+header .header-potato, .features-subtitle, .potato-types .potato {
+	width: 285px;
+}
 header .header-potato {
-    width: 30%;
     margin-top: 65px;
 }
 
 main div {
 	color: black;
-	text-align: center;
 }
 
 main div.features {
-	background: url("images/potato-background.PNG");
+	/*background: url("images/potato-background.PNG");*/
 	background-size: cover;
 	background-position: center;
-	padding: 200px 0 200px 0;
+	padding: 100px 0 0;
 }
 
 .features-title, .features-subtitle, .order-title, .potato-title, .potato-description {
 	font-weight: 300;
 }
+.feature-potatoes {
+	width: 99%;
+}
 
 .features-subtitle {
-    width: 30%;
     margin: 20px auto;
 }
 
@@ -108,6 +108,8 @@ main div.features {
 }
 
 .potato-types {
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 50px;
     padding: 0 15%;
 	font-size: 30px;
@@ -118,9 +120,6 @@ main div.features {
 }
 
 .potato-types .potato {
-	width: 30%;
-	height: 640px;
-	display: inline-grid;
 	border-right: 2px solid #b5b5b5;
 }
 
@@ -130,7 +129,7 @@ main div.features {
     margin-top: 60px;
 }
 
-.potato-price, .potato-description {
+.potato-price, .potato-description, .footer-text {
     font-size: 20px;
 }
 
@@ -149,14 +148,27 @@ main div.features {
 	margin: 25px auto;
 }
 
+.btn-order:hover {
+	background-color: #9bd230;
+	color: #fff;
+}
+
 footer {
 	height: 55px;
 	padding-top: 30px;
 	background-color: #867260;
 }
 
-.footer-text {
-	text-align: center;
-	font-weight: bold;
-	font-size: 20px;
+@media only screen and (max-width:540px){
+	nav ul {
+		display: initial;
+	}
+	nav ul li {
+		margin: 15px;
+	}
+	.potato-types .potato {
+		border-right: none;
+		border-top: 2px solid #b5b5b5;
+		margin: 30px 0;
+	}
 }
