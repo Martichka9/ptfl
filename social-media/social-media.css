@@ -11,31 +11,34 @@ body {
 }
 
 footer {
-	width: 800px;
+	background-color: #292929;
+	color: white;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 30px auto;
 }
-article {
-	display: inline-table;
-	margin: 0 15px;
+footer .footer-article {
+	width: 170px;
+	margin:15px;
 }
 
-article:last-of-type {
-	width: 250px;
-}
-
-h2 {
+.footer-h2 {
 	text-transform: uppercase;
 	font-size: 16px;
 }
-ul, img {
+.ftr-ul {
 	margin-top: 20px;
 }
-
-li {
+#links {
+	display: flex;
+}
+.ftr-ul li {
 	list-style-type: none;
 	margin: 0px;
 }
-a {
+.ftr-ul li a {
 	color: #c4bb93;
 	text-transform: capitalize;
 	font-size: 18px;
@@ -43,39 +46,50 @@ a {
 }
 
 #links li, #links li a {
-	display: inline-block;
-    width: 55px;
-    height: 55px;
+	display: block;
+    width: 39px;
+	height: 39px;
+	background-size: 593px 89px;
 }
 
 #fb{
-	background: url("images/social.jpg") -10px -1px;
+	background: url("../images/social.jpg") -7px -1px;
 }
 
 #in{
-	background: url("images/social.jpg") -202px -1px;	
+	background: url("../images/social.jpg") -143px -1px;	
 }
 
 #yt{
-	background: url("images/social.jpg") -521px -1px;
+	background: url("../images/social.jpg") -369px -1px;
 }
 
 #tw{
-	background: url("images/social.jpg") -74px -1px;	
+	background: url("../images/social.jpg") -53px -1px;	
 }
 
 #fb:hover{
-	background: url("images/social.jpg") -10px 60px;
+	background: url("../images/social.jpg") -7px 43px;
+	background-size: 593px 89px;
 }
 
 #in:hover{
-	background: url("images/social.jpg") -202px 60px;	
+	background: url("../images/social.jpg") -143px 43px;	
+	background-size: 593px 89px;
 }
 
 #yt:hover{
-	background: url("images/social.jpg") -521px 60px;
+	background: url("../images/social.jpg") -369px 43px;
+	background-size: 593px 89px;
 }
 
 #tw:hover{
-	background: url("images/social.jpg") -74px 60px;	
+	background: url("../images/social.jpg") -53px 43px;	
+	background-size: 593px 89px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.footer-article {
+		width: 40%;
+	}
 }

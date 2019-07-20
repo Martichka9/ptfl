@@ -4,6 +4,7 @@ body,h3,p,ul {
 	font-family: "Calibri Light", sans-serif;
 	font-size: 16px;
 }
+
 /*HEADER STYLES*/
 #logo {
 	margin: 5px;
@@ -24,9 +25,13 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 }
+
+ul {
+	list-style: none;
+
+}
 /*MAIN MENU*/
 nav ul {
-  list-style: none;
   display: flex;
   background: #e67c1f;
   z-index: 1000;
@@ -36,14 +41,13 @@ li ul, #menuIcon  {
 	display: none;
 }
 
-ul li {
+nav ul li {
   background: #e67c1f;
 }
 
 ul li a {
   display: block;
   padding: 1em;
-  text-decoration: none;
   color: #fff;
 }
 
@@ -140,7 +144,7 @@ li li:hover #subMenu2 {
 }
 
 /*FIRST ARTICLES*/
-article {
+section.sec1 > article {
 	background: #fff;
 	display: grid;
 	width: 350px;
@@ -183,7 +187,7 @@ p {
 /*ITNEWS STYLES*/
 #itNews, #numbers  {
 	width: 80%;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 0 30px;
     box-sizing: border-box;
 }
@@ -232,8 +236,8 @@ p {
 .numbers {
     display: grid;
     grid-template-rows: 165px 60px 40px;
-    width: 300px;
-    margin:10px;
+    width: 200px;
+    margin:0 25px;
     border-radius: 10px 10px;
     padding: 15px 0;
     background-color: #eeeeee;
@@ -242,7 +246,7 @@ p {
 #numbers h2{width: 100%; margin: 0 0 40px}
 
 .numbers .circle {
-    background-color: #FF9800;;
+    background-color: #FF9800;
     border-radius: 50%;
     height: 160px;
     width: 160px;
@@ -267,6 +271,7 @@ p {
 	background-color: #dddddd;
 	border: none;
 	color: #7c746e;
+    margin: 0 auto;
 }
 
 .circleBG1:hover {
@@ -300,6 +305,91 @@ p {
 button:hover {
 	background-color: white;
 	cursor: pointer;
+}
+
+/*Footer styles*/
+
+footer {
+	background-color: #292929;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px auto 0;
+}
+footer .footer-article {
+	background-color: #292929;
+	width: 170px;
+	margin: 10px;
+}
+
+.footer-h2 {
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.ftr-ul {
+	margin-top: 20px;
+}
+#links {
+	display: flex;
+}
+.ftr-ul li {
+	margin: 0px;
+}
+.ftr-ul li a {
+	color: #FF9800;
+	text-transform: capitalize;
+	font-size: 18px;
+	padding: 0;
+}
+
+#links li, #links li a {
+	display: block;
+    width: 39px;
+	height: 39px;
+	background-size: 593px 89px;
+}
+
+#fb{
+	background: url("../../images/social.jpg") -7px -1px;
+}
+
+#in{
+	background: url("../../images/social.jpg") -143px -1px;	
+}
+
+#yt{
+	background: url("../../images/social.jpg") -369px -1px;
+}
+
+#tw{
+	background: url("../../images/social.jpg") -53px -1px;	
+}
+
+#fb:hover{
+	background: url("../../images/social.jpg") -7px 43px;
+	background-size: 593px 89px;
+}
+
+#in:hover{
+	background: url("../../images/social.jpg") -143px 43px;	
+	background-size: 593px 89px;
+}
+
+#yt:hover{
+	background: url("../../images/social.jpg") -369px 43px;
+	background-size: 593px 89px;
+}
+
+#tw:hover{
+	background: url("../../images/social.jpg") -53px 43px;	
+	background-size: 593px 89px;
+}
+
+@media only screen and (max-width: 1440px) {
+	.numbers {
+		margin: 30px 8%;
+	}
 }
 
 @media only screen and (max-width: 1300px) {
@@ -340,6 +430,11 @@ button:hover {
 	
 	.itNewsArticle img {
 		width: 75%;
+	}
+	.numbers {
+		margin: 30px 4%;}
+	.footer-article {
+		width: 40%;
 	}
 }
 

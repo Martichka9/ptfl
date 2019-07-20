@@ -1,27 +1,29 @@
 @media screen and (max-width: 740px) {
     * {text-align: center;}
-    #wrapper{display: inline-flex;
-    	flex-direction: column;}
-    	#wrapper *{width: 100%;}
-    #photo img {
-    	width: 50%;
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    #wrapper *{
+        width: 100%;
+    }
+    .clearfix {
+        display: flex;
+    }
+
+    .clearfix #photo {
+        width: fill-available;
     }
     #skills-left, #skills-right {
-    	display: inline-grid;
     	width: 49%;
-    	margin-right: 0;
     }
-    p, ul li, h4{
-    	padding-left: 0;
+    p, h4{
+        padding-left: 0;
+    }
+    p, h4, ul li{
     	text-align: left;
     }
 
-    ul {
-    	padding-left: 8%;}
-    ul li {
-    	list-style-type: disc;
-    	list-style-image: url(images/bullet.png);
-    }
 }
 
 @media screen and (max-width: 570px) {

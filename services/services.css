@@ -15,7 +15,7 @@ body {
 }
 
 header, main {
-	width: 50%;
+	width: 60%;
 }
 
 header {
@@ -45,13 +45,14 @@ header > p:last-of-type {
 
 main {
 	margin: auto;
-	justify-content: center;
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 article {
     width: 220px;
-    margin-right: 20px;
+    margin: 20px 20px 0;
     text-align: center;
 	border-left: 10px solid #f0f0e8;
 }
