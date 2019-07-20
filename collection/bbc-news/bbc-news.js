@@ -13,7 +13,7 @@ $('#menuIcon').click(function() {
 });
 $(function() {
     $(document).click(function(e) {    
-      var offset = $(this).offset();
+      var offset = $('#menuIcon').offset();
       var relativeX = (e.pageX - offset.left);
       var relativeY = (e.pageY - offset.top);
     
