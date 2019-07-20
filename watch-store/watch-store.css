@@ -13,27 +13,30 @@ body {
 }
 
 main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 2% auto;
     width: 70%;
-    height: 480px;
-    padding: 0 35px;
+    height: fit-content;
     background-color: #ffae31;
-    border-radius: 30px;
-    box-sizing: border-box;
+	border-radius: 30px;
+	
 }
 
 main article {
 	text-align: center;
     display: inline-table;
-    width: 26%;
+    width: 225px;
     height: 400px;
-    margin: 0px 30px;
+    margin: 10px 30px;
     background-color: #602c74;
     border-radius: 15px 0 15px;
 }
 
 h1, h2, h3 {
 	text-align: center;
+	width: 100%;
 	margin: 0;
 }
 
