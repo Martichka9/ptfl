@@ -1,0 +1,32 @@
+@media screen and (max-width: 480px) {
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	header {
+		padding-top: 25%;
+		height: 200px;
+		background: url("imgs/bg.jpg");
+	}
+	.wrapper.style1 .content, .wrapper.style2, .spotlight, .spotlight .inner {
+	    padding: 20px;
+	}
+    .wrapper, .gallery > *, .spotlight > * {
+    	width: 100%;
+    	text-align: center;
+    }	
+
+    main > .inner {
+    	max-width: 100%;
+    }
+
+	body > main > section > section.wrapper.style1 > div > p:nth-child(1) {
+		text-align: left;
+	}
+	.spotlight {
+    	flex-direction: column;
+    	padding: 0;
+    }
+    .spotlight.alt {
+    padding: 0;}
+}

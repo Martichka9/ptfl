@@ -1,0 +1,171 @@
+@import url("https://fonts.google.com/specimen/Open+Sans");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+header, #need {
+    color: white;
+}
+header, #need, #kind {
+    text-align: center;
+}
+
+header {
+    background: url(imgs/header.png) no-repeat center;
+    background-size: cover;
+	height: 425px;
+}
+
+header nav {
+	height: 60px;
+    background: white;
+}
+header > nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 20px;
+}
+header > nav > ul > li > a{
+	color: #df825b;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 0.9rem;
+    letter-spacing: 0px;
+}
+.red {
+	background-color: #eb6042;
+    height: 3px;
+    border: 0;
+    width: 41px;
+     margin: 23px auto;
+}
+
+.white {
+	background-color: white;
+    height: 3px;
+    border: 0;
+    width: 41px;
+     margin: 23px auto;
+}
+header h1 {
+	margin-top: 100px;
+    font-size: 1.6rem;
+}
+
+header p {
+	width: 47%;
+	margin: 0 auto;
+	font-size: 0.9rem;
+     line-height: 20px;
+	color: #d3d0c6;
+	text-shadow: 1px 1px 1px darkgrey;
+}
+
+#need, #kind {
+
+	padding: 50px;
+}
+
+h2, h3 {
+	font-weight: lighter;
+}
+
+#need {
+	background-color: #f05f40;
+	box-sizing: border-box;
+}
+
+#need article {
+	    width: 50%;
+    margin: 0px auto;
+}
+
+#need article p {
+    color: #fcbaa8;
+    margin-bottom: 40px;
+    font-size: 14px;
+	text-shadow: 1px 1px 1px #d07159;
+     line-height: 20px;
+}
+
+#need article a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border:1px solid #cd6f5d;
+}
+
+#need article a:hover {
+	background-color: #e2e6ea;
+}
+
+#kind article,#pics article  {
+	display: inline-grid;
+	width: 17%;
+    padding: 0 10px;
+}
+
+#kind article .icon {
+	    color: #f05f40;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#kind article h3 {
+	line-height: 50px;
+}
+
+#kind article p {
+	color: #8a8b8b;
+	font-size: 15px;
+     line-height: 20px;
+}
+#pics {
+	border-top: 4px solid #ea6045;
+	border-bottom: 4px solid #ea6045;
+     text-align: center;
+    height: 270px;
+}
+#pics article  {
+	display: inline-grid;
+	width: 30%;
+	padding: 0;
+    margin: 0 10px;
+     border-left: 4px solid #ea6045;
+     border-right: 4px solid #ea6045;
+}
+#pics > article > img {
+	width: 100%;
+}
+
+footer {
+	height: 35px;
+	text-align: center;
+}
+
+footer p {
+	margin-top: 20px;
+    font-size: 15px;
+    color:#555244;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #ea6045;
+}
+
+

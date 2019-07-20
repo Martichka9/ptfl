@@ -1,0 +1,169 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+
+body {
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #a56b5e 0%,#f7e2c1 100%);
+}
+
+section {
+	width: 70%;
+    margin: 70px auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 15px #bf937e;
+     box-sizing: border-box;
+    padding: 30px;
+}
+
+article {
+	display: flex;
+    border-radius: 15px;
+}
+
+#left, #right {
+	display: inline-grid;
+    width: 50%;
+}
+
+#left {
+    border-radius: 30px 0 0 30px;
+
+}
+#product {
+      width: 80%;
+    margin: auto;
+}
+
+#right {
+    border-radius: 0 30px 30px 0;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 60px 0 25px 50px;
+    font-weight: lighter;x
+}
+
+label * {
+	display: block;
+}
+.login {
+    width:200px;
+    margin: 5px 0;
+}
+
+.login-labels {
+     display: block;
+    position: absolute;
+    margin: 12px 22px;
+    z-index: 10;
+    font-size: 14px;
+    color: #71706f;
+}
+label input   {
+    border: none;
+    line-height: 30px;
+    width: 250px;
+    background: #ededed;
+     border-radius: 30px;
+    padding: 5px 0 5px 50px;
+    box-sizing: border-box;
+}
+::placeholder { 
+    color: #9e9b99;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+     margin: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border:5px solid #b2b2b2;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #b2b2b2;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+#right > label.here > label > span{
+    line-height: 22px;
+    color:#b2b2b2;
+}
+.here, #right > label.here > span{
+    margin: 20px 0;
+}
+form button {
+	margin: 20px 0 0;
+    width: 220px;
+    border: none;
+    background: #946e54;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    color: white;
+    font-weight: bolder;
+}
+
+form button:hover {
+	background-color: #5e4736;
+	color: white;
+}
+
+.forgot {
+    color: #a2a2a2;
+    height: 50px;
+     padding: 10px 30px 0;
+    font-size: 12px;
+}
+
+a {
+    color: #727476;
+}
+.new {
+
+     padding: 5px 5px 0 50px;
+    font-size: 12px;
+}
