@@ -2,11 +2,18 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
-	font-family:  "Open Sans", "Arial", "Comfortaa", sans-serif;
+    font-family:  "Open Sans", "Arial", "Comfortaa", sans-serif;
+	background-color: #f4f5f7;
 	font-size: 14px;
     color: #333;
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 270px 99%;
+    grid-template-areas: 
+    "aside header"
+    "aside main";
 }
 
 a {
@@ -14,21 +21,29 @@ a {
 }
 
 aside {
-	display: inline-block;
-	width: 20%;
-	float: left;
+    display: grid;
+    grid-area: aside;
+    grid-template-rows: 130px 100px 55px;
+    background-color: #fff;
+    position: fixed;
+    height: -webkit-fill-available;
+    width: 270px;
 }
 
+header {grid-area:header;}
+main {grid-area:main;}
+
 main, header {
-	display: inline-block;
 	width: 80%;
-	float: right;
+}
+
+aside > h1, .u-name, .label  {
+    text-align: center;
 }
 
 aside > h1 {
 	font-family: "Comfortaa", sans-serif;
     font-size: 3.3rem;
-    text-align: center;
 }
 
 aside img {
@@ -38,11 +53,13 @@ aside img {
     border-radius: 50%;
 }
 
+.u-name, aside ul li a, header a, main section > p, .label {    
+    text-transform: uppercase;
+}
+
 .u-name {
 	display: block;
     width: 100%;
-    text-align: center;
-    text-transform: uppercase;
     color: #b2c1c6;
     font-family: "Comfortaa", sans-serif;
     margin: 20px 0;
@@ -61,8 +78,6 @@ aside ul li {
 
 aside ul li a{
 	color: #b5c3c6;
-	text-decoration: none;
-	text-transform: uppercase;
 	font-size: 1.1rem;
 }
 
@@ -78,10 +93,6 @@ aside ul li:hover a{
 .icons {
     width: 25px;
     display: inline-block;
-}
-
-header, main {
-	background-color: #f4f5f7;
 }
 
 header {
@@ -104,7 +115,6 @@ header a {
     border: 3px solid #ff7739;
     border-radius: 30px;
     padding: 10px 20px;
-    text-transform: uppercase;
     color: #ff7739;
     float: right;
 }
@@ -118,13 +128,16 @@ main section {
     color: #384850;
 }
 
+article > p, main section h3 {
+    text-transform: capitalize;
+}
+
 main section h3 {
 	text-transform: capitalize;
 	margin: 40px 0 5px 0;
 }
 
 main section > p {
-	text-transform: uppercase;
 	margin:  5px 0;
 }
 
@@ -140,7 +153,6 @@ main section article {
 article > p {
 	margin: 0;
     padding: 0 30px;
-    text-transform: capitalize;
 }
 body > main > section > article > img {
     margin-top: 50px;
@@ -155,8 +167,6 @@ body > main > section > article > img {
     border-radius: 20px;
     padding: 5px;
     box-sizing: border-box;
-    text-transform: uppercase;
-    text-align: center;
     color: #fff;
     margin-left: -22px;
     margin-top: 100px;
@@ -169,3 +179,66 @@ body > main > section > article > img {
 .listed {
 	background-color: #68bb69;
 }	
+
+@media only screen and (max-width:1380px) {
+    header {
+        padding: 50px 65px 30px;
+    }
+    main section {
+        margin: 0px 40px;
+    }
+    main section article {
+        margin-right: 25px;
+    }
+}
+@media only screen and (max-width:1318px) {
+    body {
+        grid-template-columns: 270px 86%;
+    }
+    main section {
+        margin: 0px 60px;
+    }
+}
+
+@media only screen and (max-width: 898px) {
+    body {
+        grid-template-columns: 270px 80%;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    body {
+        grid-template-areas:
+        "aside"
+        "header"
+        "main";
+        grid-template-columns: 100%;
+    }
+    
+    aside {
+        grid-template-rows: auto;
+        grid-template-areas:
+        "h1 h1"
+        "nav img"
+        "nav span";
+        position: initial;
+        height: fit-content;
+        width: -webkit-fill-available;
+    }
+    aside h1 {grid-area: h1;}
+    aside nav {grid-area: nav;}
+    aside img {grid-area: img;}
+    aside span {grid-area: span;}
+    main, header {
+        width: 100%;
+    }
+    main section {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    main section article {
+        margin: 25px auto;
+        width: fit-content;
+}
