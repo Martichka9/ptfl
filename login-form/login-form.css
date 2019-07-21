@@ -29,7 +29,7 @@ article h2 {
 	color: white;
 }
 
-#the-triangle {
+.the-triangle {
     margin-top: -34px;
     width: 67px;
     height: 48px;
@@ -59,7 +59,7 @@ form input {
     color: #a9a9a9;
 }
 
-form input#submit {
+form input.submit {
 	background-color: #927057;
     color: #d5c395;
     font-weight: bold;

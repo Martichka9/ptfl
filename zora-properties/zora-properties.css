@@ -26,7 +26,7 @@ aside {
     grid-template-rows: 130px 100px 55px;
     background-color: #fff;
     position: fixed;
-    height: -webkit-fill-available;
+    height: 100%;
     width: 270px;
 }
 
@@ -223,7 +223,7 @@ body > main > section > article > img {
         "nav span";
         position: initial;
         height: fit-content;
-        width: -webkit-fill-available;
+        width: 100%;
     }
     aside h1 {grid-area: h1;}
     aside nav {grid-area: nav;}

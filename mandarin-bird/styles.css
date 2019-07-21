@@ -96,11 +96,11 @@ main > aside > article{
     background-color: white;
     padding: 20px;
 }
-main > aside > article > h1{
+main > aside > article > h2{
     font-size: 25px;
     color: #5a5b3c;
 }
-main > aside > article > h2{
+main > aside > article > h3{
     font-size: 15px;
 }
 main > aside > article > p:nth-child(3), #wrapper > main > section > article > p:nth-child(4){

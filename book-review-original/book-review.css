@@ -10,7 +10,10 @@ body {
 	background: linear-gradient(to bottom, #567788 0%,#121f25 100%) no-repeat center center;
 	font-size: 14px;
 	color: #333333;
-	padding: 2em;
+}
+
+header, main {
+	padding: 2em 0;
 }
 
 #BR p, main h2, #user-review  {
@@ -40,8 +43,8 @@ nav{
     padding: 1.4em;
     z-index: 1000;
     position: absolute;
-    width: 93%;
-    margin-top: 40px;
+    width: -webkit-fill-available;
+    margin: 40px auto;
 }
 
 ul li {
@@ -104,7 +107,7 @@ main article {
 main article #user-review {
     background-color: #ea3852;
     color: white;
-    width: 25%;
+    width: 377px;
     height: 350px;
     margin-left: 23%;
     z-index: 300;
@@ -124,7 +127,6 @@ main article #chapter1 {
     margin: 170px auto 0;
     background-color: white;
     padding: 260px 4% 2%;
-    height: 160px;
 }
 
 #chapter1 p {
@@ -149,7 +151,7 @@ img {
     display: block;
 }
 
-#quotes {
+.quotes {
     font-size: 200%;
     margin: 5px;
     color: #b51e3e;
@@ -194,4 +196,15 @@ img {
     text-align: center;
     text-decoration: none;
     color: #7c929c;
+}
+
+@media only screen and (max-width:780px) {
+    main h1 {
+        font-size: 80px;
+        width: 67%;
+    }
+    main h2 { text-align: left;}
+    main article #user-review {
+        margin-left: 0;
+    }
 }

@@ -13,7 +13,7 @@ body,h3,p,ul {
 
 nav {
     position: fixed;
-    width: -webkit-fill-available;
+    width: 100%;
     z-index: 1000;
 	background-color: #e67c1f;
 	display: flex;
@@ -170,7 +170,7 @@ h2{
 	transform: scale(1.15);
 	overflow: initial;
 	box-shadow: 2px 2px 15px;
-    height: max-content;
+    height: fit-content;
 	z-index: 1000;
 }
 
@@ -411,14 +411,14 @@ footer .footer-article {
 
 	#mainMenu {
 		display: none;
-		width:-webkit-fill-available;
+		width:100%;
 		flex-direction: column;
 		position: absolute;
 		top: 50px;	
 		text-align: center;
 	}
 	li:hover ul li, #subMenu1, li li:hover #subMenu2 {
-		width:-webkit-fill-available;
+		width:100%;
 		margin: 0 auto;
 		left: 0;
 	}
@@ -448,6 +448,6 @@ footer .footer-article {
 	
 	.itNewsArticle img {
 		width: 98%;
-		margin-left: 0 auto;
+		margin: 0 auto;
 	}
 }

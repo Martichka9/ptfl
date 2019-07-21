@@ -55,8 +55,10 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 }
 
 #groups div {
-	display: flex;
 	margin: 10px 0;
+}
+#groups > div > label {
+	display: flex
 }
 
 #groups div input {

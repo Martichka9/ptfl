@@ -109,7 +109,6 @@ header > a:hover {
 }
 
 .industry-icon {
-    display: inline-block;
     float: left;
     width: 55px;
     height: 55px;
@@ -167,9 +166,7 @@ header > a:hover {
     padding: 40px 20px;
     margin: 20px;
 }
-.pointsWtcu{
 
-}
 /*  Forth section  */
 #the-quote {
     height: 550px;
@@ -227,7 +224,7 @@ q::before, q::after {
 #brandsIcons {
     display: flex;
     justify-content: center;
-    width: -webkit-fill-available;
+    width: 100%;
     padding: 30px 0;
 }
 
@@ -303,6 +300,7 @@ footer > .info .iw {/*Image width*/
         width: 99%
     }
     #the-quote > article {
-    width: initial;
-    margin: 60px 0 0;
+        width: initial;
+        margin: 60px 0 0;
+    }
 }

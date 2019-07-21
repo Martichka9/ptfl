@@ -2,17 +2,21 @@ body {
     font-family: Arial, serif;
 }
 
-table {
-    border: 1px solid #ccc;
-    width: 100%;
+body * {
     margin:0;
     padding:0;
+    }
+    
+table, table tr  {
+    border: 2px solid #ccc;
+}
+table {
+    width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
 }
 
 table tr {
-    border: 2px solid #ccc;
     padding: 5px;
     background: #fff8b7;
 }
@@ -31,13 +35,12 @@ table th {
 }
 
 
-
 @media screen and (max-width: 600px) {
     thead {
         display: none;
     }
 
-    tbody, tr {
+    tr {
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -60,7 +63,6 @@ table th {
     tbody tr td:before {
         content: attr(data-label);
         width: 50%;
-        display: inline-block;
         font-weight: bold;
         text-align: left;
         float: left;
