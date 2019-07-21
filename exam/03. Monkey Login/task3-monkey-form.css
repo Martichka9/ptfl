@@ -17,12 +17,10 @@ section {
 }
 
 article {
-	display: flex;
     border-radius: 15px;
 }
 
 #left, #right {
-	display: inline-grid;
     width: 50%;
 }
 
@@ -31,7 +29,7 @@ article {
 
 }
 #product {
-      width: 80%;
+      width: -webkit-fill-available;
     margin: auto;
 }
 
@@ -39,20 +37,45 @@ article {
     border-radius: 0 30px 30px 0;
     padding-left: 30px;
     box-sizing: border-box;
+    display: grid;
+    width: -webkit-fill-available;
+    grid-template-columns: 55%;
+    grid-template-areas:
+    "monkey label"
+    "monkey login1"
+    "monkey login2"
+    "monkey where"
+    "monkey btn"
+    "monkey frgt"
+    "monkey last";
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin: 60px 0 25px 50px;
-    font-weight: lighter;x
+#right #left {
+    grid-area: monkey;
+    display: flex;
+    align-items: center;
+    width: -webkit-fill-available;
 }
+#right h2 {
+    grid-area: label;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: lighter;
+}
+#right .login:first-of-type {grid-area: login1;}
+#right .login:last-of-type {grid-area: login2;}
+#right .here {grid-area: where;}
+#right button {grid-area: btn;}
+#right .forgot {grid-area: frgt;}
+#right span:last-of-type {grid-area: last;}
 
 label * {
 	display: block;
 }
+
 .login {
-    width:200px;
-    margin: 5px 0;
+    width: fit-content;
+    margin: 5px auto;
 }
 
 .login-labels {
@@ -167,3 +190,55 @@ a {
      padding: 5px 5px 0 50px;
     font-size: 12px;
 }
+
+@media only screen and (max-width: 880px) {
+    section {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
+    #right {
+        display: flex;
+        flex-direction: column;
+    }
+    #product {
+        width: 145px;
+        position: absolute;
+        right: 7%;
+        top: 47%;
+    }
+    .login {
+
+    }
+}
+/* 
+
+    #left, #right {
+        display: initial;
+    }
+    #right {
+        display: grid;
+        width: -webkit-fill-available;
+        grid-template-columns: 55%;
+        grid-template-areas:
+        "monkey label"
+        "login1 where"
+        "login2 where"
+        ". where"
+        "btn btn"
+        "frgt frgt"
+        "last last";
+    }
+    #right #left {
+        justify-self: center;
+    }
+    #right h2 {
+        align-self: center;
+    }
+    .here {margin-top: -10px;}
+    
+    #right button, .forgot, span:last-of-type {
+        justify-self: end;
+    } */

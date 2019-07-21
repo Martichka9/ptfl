@@ -66,6 +66,14 @@
 	}
 }
 
+@media screen and (max-width: 640px) {
+	main section > div {
+		display: grid;
+		text-align: center;
+		height: fit-content;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	header h1 {
 		    padding: 10px 0;

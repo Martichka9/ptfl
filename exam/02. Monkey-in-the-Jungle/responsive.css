@@ -1,3 +1,38 @@
+@media only screen and (max-width: 1024px) {
+	body {
+		padding-top: 4rem;
+	}
+	.wrapper.style2, .spotlight .inner, .wrapper.style1 .content {
+		padding: 1rem;
+	}
+	.wrapper > header.special {
+		padding: 1rem 2rem;
+	}
+}
+
+@media only screen and (max-width:898px) {
+	.spotlight .inner {
+		padding: 5px 10px;
+	}
+	.spotlight {
+		align-items: flex-start;
+	}
+}
+
+@media only screen and (max-width:860px) {
+	.spotlight {
+		flex-direction: column;
+	}
+	.spotlight > img {
+		margin: 0 auto !important;
+		width: 100%;
+	}
+	.spotlight .inner {
+		padding: 5px 10px 20px;
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	body {
 		padding: 0;
@@ -5,8 +40,8 @@
 	}
 	header {
 		padding-top: 25%;
-		height: 200px;
-		background: url("imgs/bg.jpg");
+		height: 200px;	
+		background: url("../../images/bg.jpg");
 	}
 	.wrapper.style1 .content, .wrapper.style2, .spotlight, .spotlight .inner {
 	    padding: 20px;

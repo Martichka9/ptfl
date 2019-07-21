@@ -19,7 +19,7 @@ header, #need, #kind {
 }
 
 header {
-    background: url(imgs/header.png) no-repeat center;
+    background: url(../../images/header.png) no-repeat center;
     background-size: cover;
 	height: 425px;
 }
@@ -113,7 +113,26 @@ h2, h3 {
 	background-color: #e2e6ea;
 }
 
-#kind article,#pics article  {
+#kind {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#kind h2 {
+    width: 100%;
+}
+#kind hr {
+    margin: 20px 48%;
+}
+#kind article {
+    display: grid;
+    grid-template-rows: 65px 50px 80px;
+    width: 245px; 
+    padding: 0 10px;
+}
+
+#pics article  {
 	display: inline-grid;
 	width: 17%;
     padding: 0 10px;
@@ -138,10 +157,10 @@ h2, h3 {
 	border-top: 4px solid #ea6045;
 	border-bottom: 4px solid #ea6045;
      text-align: center;
-    height: 270px;
+     height: fit-content;
+     display: flex;
 }
 #pics article  {
-	display: inline-grid;
 	width: 30%;
 	padding: 0;
     margin: 0 10px;
@@ -168,4 +187,11 @@ footer p a {
     color: #ea6045;
 }
 
-
+@media only screen and (max-width:768px) {
+    header p {
+        width: 70%;
+    }
+    #need article {
+        width: 100%;
+    }
+}
