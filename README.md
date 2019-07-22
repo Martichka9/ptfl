@@ -1,4 +1,4 @@
 # ptfl
- HTML and CSS course homeworks collected in one place.
+ I've collected here most of my homeworks from HTML and CSS course.
  
- Some small tasks are combined to one page (collection).
+ Some small tasks are combined to one page in collection folder.
